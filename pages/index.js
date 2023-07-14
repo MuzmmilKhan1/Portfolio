@@ -123,6 +123,7 @@ import { TechStack } from '../Components/TechStack';
 import { Projects } from '../Components/Projects';
 import { Contact } from '../Components/Contact';
 import { Footer } from '../Components/Footer';
+import Head from 'next/head';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('');
@@ -149,6 +150,10 @@ export default function Home() {
     };
   }, []);
   return (
+    <>
+    <Head>
+      <title>Muzamil Khan</title>
+    </Head>
     <div className='App'
     style={{
       margin: "0",
@@ -170,6 +175,7 @@ export default function Home() {
       <Contact></Contact>
       <Footer></Footer>
     </div>
+      </>
   )
 }
 
