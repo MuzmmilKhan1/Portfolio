@@ -1,0 +1,33 @@
+.card{
+    margin: 0 auto;
+}
+.cardChild{
+    display: flex;
+    flex-direction: row;
+}
+.cardElementReverse{
+    display: flex;
+    flex-direction: row;
+}
+.cardElements{
+    width: 50%;
+}
+
+@media  screen and (max-width: 992px) {
+    .cardChild{
+        flex-direction: column;
+    }
+    .cardElementReverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cardElements{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        width: 95%;
+    }
+}

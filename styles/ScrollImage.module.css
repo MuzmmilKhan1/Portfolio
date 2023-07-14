@@ -1,0 +1,42 @@
+
+.content {
+  position: relative;
+}
+.screen {
+	display: block;
+	width: 350px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 1px;
+	margin: 0 auto;
+}
+
+.screen {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.screen .Scrollingimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation-play-state: paused;
+}
+
+.screen:hover .Scrollingimg {
+  animation: scrollImage 10s linear infinite;
+}
+
+@keyframes scrollImage {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -100%; 
+  }
+  100% {
+    top: 0;
+  }
+}

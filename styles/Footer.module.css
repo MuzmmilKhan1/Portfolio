@@ -1,0 +1,30 @@
+.Footer{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(30, 36, 43);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin: 0;
+    color: white;
+}
+.Footer p{
+    margin: auto;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 786px) {
+    .Footer{
+        margin: 0;
+        padding: 0;
+    }
+    .footerIcons{
+        display: none;
+    }
+}

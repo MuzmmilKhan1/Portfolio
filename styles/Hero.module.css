@@ -1,0 +1,88 @@
+/* Main Div */
+.Home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 500px;
+    width: 100%;
+}
+
+/* Div For Text and Explannation */
+
+.desc{
+    width: 50%;
+}
+
+.desc p{
+    width: 80%;
+}
+
+/* Web Dev */
+
+.text{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/* Image */
+
+.ImageDiv{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeImage{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+/* Icons */
+
+.homeIcons{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 786px) {
+    .Home{
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 100; */
+    }
+
+    .desc{
+        width: 100%;
+        margin: 0 0 10vh 0 !important;
+
+    }
+
+    .desc p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .ImageDiv, .homeImage{
+        width: 150px;
+        height: 150px;
+        /* margin: 0 0 2vh 0;  */
+        padding: 1.5vh;
+    }
+
+    .homeIcons{
+        justify-content: center;
+        margin: 2vh 0;
+    }
+    
+}
