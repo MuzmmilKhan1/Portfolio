@@ -23,9 +23,6 @@ const About = () => {
         {/* Text */}
         <div 
         className='text-center col-md-6'
-        // style={{
-        //     width: "35%"
-        // }}
         >
             <h5
             style={{
